@@ -1,8 +1,8 @@
-# mnist: Python utilities to download and parse the MNIST dataset
+
 
 ## MNIST dataset
 
-**IMPORTANT: This repository has been moved to https://gitlab.com/datapythonista/mnist**
+
 
 The MNIST database is available at http://yann.lecun.com/exdb/mnist/
 
@@ -39,6 +39,7 @@ get it, simply use:
 X_train = X_train.reshape(X_train.shape[0], 28, 28,1)
 X_test = X_test.reshape(X_test.shape[0], 28, 28,1)
 ```
-Finally we use Keras sequential model to train, and use of Convolution, pooling , batchnorm and dropout layers to detect the handwritten digits from MNIST dataset
+We use Keras sequential model to train, and use of Convolution, pooling , batchnorm and dropout layers to detect the handwritten digits from MNIST dataset
 
 
+Finally we get validation accuracy of 99.40 using just 7,738 parameters, and 100 epochs.
